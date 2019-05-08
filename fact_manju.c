@@ -2,7 +2,10 @@
 int main()
 {
     int i, fact = 1, num=5;
-        fact = 1;
+        if(num==0)
+        {
+            fact = 1;
+        }
     else
     {
         for (i = 1; i <= num; i++)
