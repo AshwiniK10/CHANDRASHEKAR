@@ -1,15 +1,14 @@
-sudo: false # only for faster builds
-script:
-  - clang -coverage -O0 pattern.c -o pattern
-  - ./pattern
-  - gcov pattern.c
-  - clang -coverage -O0 triangle_pattern.c -o triangle_pattern
-  - ./triangle_pattern
-  - gcov triangle_pattern.c
-   - clang -coverage -O0 fact_manju.c -o fact_manju
-  - ./fact_manju
-  - gcov fact_manju.c
-
-after_success:
-  - bash <(curl -s https://codecov.io/bash)
-
+matrix:
+  include:    
+    - language: c  
+      sudo: false # only for faster builds  
+      compiler:
+        - clang
+        - gcc
+      script:  
+        - gcc -o chandu pattern.c 
+        - ./pattern
+        - gcc -o pattar fact_manju.c
+        - ./fact_manju
+        - gcc -o peace triangle_pattern.c
+        - ./triangle_pattern
