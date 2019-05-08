@@ -3,6 +3,9 @@ script:
   - clang -coverage -O0 pattern.c -o pattern
   - ./pattern
   - gcov pattern.c
+  - clang -coverage -O0 pattern_triangle.c -o pattern
+  - ./pattern
+  - gcov pattern.c
 
 after_success:
   - bash <(curl -s https://codecov.io/bash)
