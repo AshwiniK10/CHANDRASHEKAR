@@ -7,8 +7,8 @@ matrix:
         - gcc
       script:  
         - gcc -o chandu fact_manju.c
-        - ./fact_manju
+        - ./chandu
         - gcc -o pattar pattern.c
-        - ./pattern
+        - ./pattar
         - gcc -o peace triangle_pattern.c
-        - ./triangle_pattern
+        - ./peace
