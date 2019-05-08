@@ -1,10 +1,10 @@
 #include <stdio.h>
 void main()
 {
-    int i, fact = 1, num;
+    int i, fact = 1, num=5;
  
     printf("Enter the number \n");
-    scanf("%d", &num);
+    //scanf("%d", &num);
     if (num <= 0)
         fact = 1;
     else
