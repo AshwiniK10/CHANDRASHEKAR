@@ -6,9 +6,9 @@ matrix:
         - clang
         - gcc
       script:  
-        - gcc -o chandu fact_manju.c
-        - ./chandu
-        - gcc -o pattar pattern.c
-        - ./pattar
-        - gcc -o peace triangle_pattern.c
-        - ./peace
+        - gcc -o manjunath fact_manju.c
+        - ./manjunath
+        - gcc -o chandrashekar pattern.c
+        - ./chandrashekar
+        - gcc -o deekshith triangle_pattern.c
+        - ./deekshith
