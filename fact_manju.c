@@ -1,9 +1,9 @@
 #include <stdio.h>
-void main()
+int main()
 {
     int i, fact = 1, num=5;
  
-    printf("Enter the number \n");
+    
     //scanf("%d", &num);
     if (num <= 0)
         fact = 1;
@@ -15,4 +15,5 @@ void main()
         }
     }
     printf("Factorial of %d = %5d\n", num, fact);
+    return 0;
 }
